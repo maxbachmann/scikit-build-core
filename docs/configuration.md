@@ -713,6 +713,8 @@ take several values, including several based on [PEP 508][]:
   `on`, `yes`, `y`, `t`, or a number more than 0.
 - `state`: The state of the build, one of `sdist`, `wheel`, `editable`,
   `metadata_wheel`, and `metadata_editable`. Takes a regex.
+- `from-sdist`: This will be true if the `PKG-INFO` file exists, that is, if this is
+  coming from an SDist. Takes a bool.
 
 At least one must be provided. Then you can specify any collection of valid
 options, and those will override if all the items in the `if` are true. They
